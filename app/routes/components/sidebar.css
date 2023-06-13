@@ -1,0 +1,33 @@
+.workflow {
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+}
+
+.workflowWrapper {
+    flex-grow: 1;
+    height: 100%;
+    position: relative;
+}
+
+.export {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    min-width: 120px;
+    background-color: #F5F5F5;
+    z-index: 5;
+    border: 1px solid #CACACA;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.export:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .workflow {
+        flex-direction: row;
+    }
+}
